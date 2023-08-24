@@ -1,3 +1,17 @@
 nav {
   display: flex;
+  justify-content: space-between;
+  height: 5.25rem;
+  align-items: center;
+  padding: 0 2.625rem;
+}
+
+nav img {
+  height: 1.938rem;
+  cursor: pointer;
+}
+
+.navbar__menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
 }

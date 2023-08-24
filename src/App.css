@@ -1,1 +1,8 @@
-
+body {
+  background-image: url('../public/WhiteBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+  background-position: 15%;
+  background-color: #ffffff;
+}
