@@ -1,14 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import '../styles/navbar.css'
 import { FaBars } from 'react-icons/fa6'
+import '../styles/navbar.css'
 
 const NavBar = () => {
   return (
     <nav>
-      <img src='../public/bonsai-logo.svg' alt='Bonsai Logo' />
+      <a href='#'>
+        <img src='../public/bonsai-logo.svg' alt='Bonsai Logo' />
+      </a>
 
-      <FaBars />
+      <FaBars className='navbar__menu-icon' />
       {/* <ul>
         <div>
           <li><a href='#'>Product</a></li>
