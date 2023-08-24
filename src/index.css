@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mukta:wght@400;600;700&display=swap');
+/*/ 
+font-family: 'Luxurious Roman', cursive;
+font-family: 'Mukta', sans-serif;
+/*/
+
 :root {
   --primary-color: #00b289;
   --text-color: #4c4d5f;
