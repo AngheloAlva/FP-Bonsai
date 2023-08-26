@@ -1,0 +1,82 @@
+.plan-card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 1.489rem;
+  margin-bottom: 1.875rem;
+  background-color: #fbfcff;
+  border: 1px solid #d6d7e3;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--text-color);
+}
+
+.plan-card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: .7rem;
+}
+
+.price-symbol {
+  font-size: 1.875rem;
+  margin: 0;
+  margin-right: 0.625rem;
+}
+
+.price-amount {
+  font-size: 4.375rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.price-plan {
+  font-size: 1.5rem;
+  margin: 2.875rem 0 0;
+  margin-left: 1.25rem;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.438rem;
+  gap: 1.125rem;
+  margin: 2rem 0 2.688rem;
+}
+
+.advantages-container li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.advantages-container p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.plan-card-btn {
+  background-color: var(--primary-color);
+  font-size: .938rem;
+  color: var(--bg-color);
+  padding: 1.375rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  letter-spacing: .044rem;
+}

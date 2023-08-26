@@ -5,4 +5,14 @@ body {
   background-position: relative;
   background-position: 15%;
   background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1.25rem;
 }
