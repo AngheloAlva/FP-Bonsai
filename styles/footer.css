@@ -26,9 +26,10 @@ footer {
 .footer-list a {
   text-decoration: none;
   color: var(--text-color);
-  display: flex;
-  align-items: center;
-  gap: .3rem;
+}
+
+.footer-list a:hover {
+  color: #000000;
 }
 
 .space-list {
@@ -38,4 +39,28 @@ footer {
 .footer-list h4 {
   font-weight: 600;
   margin-bottom: .625rem;
+}
+
+.footer-dropdown-container {
+  overflow: hidden;
+}
+
+.footer-dropdown-container div {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+
+.footer-dropdown {
+  list-style: none;
+  padding: 0 0 0 .5rem;
+  overflow: hidden;
+  max-height: 0rem;
+  transition: max-height .3s ease-in-out;
+}
+
+.footer-dropdown-active {
+  max-height: 15rem;
 }
