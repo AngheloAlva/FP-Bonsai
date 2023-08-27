@@ -1,0 +1,55 @@
+.add-on-box-container {
+  padding: 1.25rem 2.5rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: .625rem;
+  box-shadow:#f4f4f7 0px 0px 60px 0px
+}
+
+.amount-container {
+  font-size: 1.5rem;
+  padding: .938rem 0 0 1.1rem;
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+}
+
+.amount-number {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 600;
+}
+
+.amount-text {
+  font-size: .875rem;
+  line-height: 1.164rem;
+  font-weight: 400;
+}
+
+.add-on-box-container h5 {
+  font-weight: 600;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+.add-on-box-container p, .add-on-box-container h5 {
+  margin: 0;
+}
+
+.learn-more-btn {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: .175rem;
+  font-weight: 600;
+  transition: gap .3s ease-in-out;
+  margin-top: .625rem;
+}
+
+.learn-more-btn:hover {
+  gap: .6rem;
+}

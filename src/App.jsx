@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import AddOnBox from '../components/AddOnBox'
 import NavBar from '../components/NavBar'
 import PlanCard from '../components/PlanCard'
 import './App.css'
@@ -55,6 +56,12 @@ function App () {
           'Unlimited Project Collaborators'
         ]}
       />
+    </section>
+    <section className='add-ons-container'>
+      <h2 className='add-ons-title'>Super charge your work with add-ons</h2>
+      <AddOnBox addonAmount={'Free'} addonTitle={'Collaborators'} addonDesc={'Invite other users to specific projects for limited access and funtionality.'} />
+      <AddOnBox addonAmount={'$9'} AmountText addonTitle={'Partners'} addonDesc={'Invite other users for full account access and company management.'} />
+      <AddOnBox addonAmount={'$10'} AmountText addonTitle={'Bonsai Tax'} addonDesc={'Track expenses, identify write-offs, and estimate quarterly taxes easily.'} LearnMore />
     </section>
     </>
   )

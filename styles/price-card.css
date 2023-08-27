@@ -9,6 +9,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--text-color);
+  box-shadow:#f4f4f7 0px 0px 60px 0px
 }
 
 .plan-card-title {
