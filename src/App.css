@@ -10,6 +10,72 @@ body {
   font-family: 'Mukta', sans-serif;
 }
 
+.plans-container-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.plan-title {
+  font-family: 'Luxurious Roman', cursive;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1.625rem 0 3.65rem;
+  max-width: 38rem;
+  width: 100%;
+}
+
+.plans-container-title h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: .5rem;
+}
+
+.plan-months-free {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  font-family: 'Mukta', sans-serif;
+}
+
+.plan-selected-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  position: absolute;
+  top: 1.4rem;
+}
+
+.plan-selected-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 1.813rem;
+  position: relative;
+  z-index: 1;
+  margin: 0 1.75rem;
+  background-color: var(--primary-color);
+  border-radius: 15rem;
+}
+
+.plan-selected-switch-circle {
+  width: 1.563rem;
+  height: 1.563rem;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  position: absolute;
+  left: .15rem;
+  transition: all .2s ease-in-out;
+}
+
+.plan-selected-switch-circle-active {
+  left: 1.45rem;
+}
+
 .plans-container {
   display: flex;
   justify-content: center;

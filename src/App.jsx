@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { useState } from 'react'
 import AddOnBox from '../components/AddOnBox'
 import Faq from '../components/Faq'
 import Footer from '../components/Footer'
@@ -8,11 +9,28 @@ import StartFreeButon from '../components/StartFreeButon'
 import './App.css'
 
 function App () {
+  const [planSelected, setPlanSelected] = useState(false)
+
   return (
     <>
       <NavBar />
 
       <section className='plans-container'>
+        <div className='plans-container-title'>
+          <div className='plan-title'>
+            <h2>Plans & Pricing</h2>
+            <div className='plan-months-free'>
+              <img src='../public/5e9d7255d3886a6103fb12a9_FREE-text.svg' alt='2 months free' />
+              <div className='plan-selected-container'>
+                <p style={{ color: planSelected ? '#c1c3c6' : '' }}>MONTHLY</p>
+                <div className='plan-selected-switch' onClick={() => setPlanSelected(!planSelected)}>
+                  <div className={`plan-selected-switch-circle ${planSelected ? 'plan-selected-switch-circle-active' : ''}` }/>
+                </div>
+                <p style={{ color: planSelected ? '' : '#c1c3c6' }}>YEARLY</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <PlanCard
           planTitle='Starter'
           planDesc='Ideal for freelancers and contractors just starting out.'
