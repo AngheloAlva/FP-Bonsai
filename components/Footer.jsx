@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import '../styles/footer.css'
-import { FaAngleDown } from 'react-icons/fa6'
+import FooterDropdown from './FooterDropdown'
 
 const Footer = () => {
   return (
@@ -33,12 +33,12 @@ const Footer = () => {
         <li><a href='#'>Self-Employed Tax Deductions</a></li>
         <li className='space-list' />
         <li><h4>Templates</h4></li>
-        <li><a href='#'>Invoice Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
-        <li><a href='#'>Proposal Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
-        <li><a href='#'>Contract Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
-        <li><a href='#'>Agreement Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
-        <li><a href='#'>Scope of Work Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
-        <li><a href='#'>Quote Templates <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
+        <FooterDropdown textLink={'Invoice Templates'} dropdownLinks={['Invoice Generator', 'Blank Invoice Template', 'Consultant Invoice Template', 'Editable Invoice Template', 'Graphic Design Invoice', 'Web Desing Invoice', 'Contractor Invoice Template', 'Photography Invoice Template', 'Self Employed Invoice Template']} />
+        <FooterDropdown textLink={'Proporsal Templates'} dropdownLinks={['Website Proposal Template', 'Digital Marketing Proposal Template', 'Social Media Marketing Proposal', 'Graphic Design Proposal', 'Freelance Proposal Template', 'SEO Proposal Template']} />
+        <FooterDropdown textLink={'Contract Templates'} dropdownLinks={['Online Contract', 'Graphic Design Contract', 'Freelance Contract Template', 'Social Media Marketing Contract', 'Web Design Contract', 'Video Production Contract', 'Public Relations Contract', 'Translation Contract']} />
+        <FooterDropdown textLink={'Agreement Templates'} dropdownLinks={['Retainer Agreement Template', 'Influencer Agreement Template', 'Collaboration Agreement Template', 'Software Development Agreement', 'Marketing Agreement Template']} />
+        <FooterDropdown textLink={'Scope of Work Templates'} dropdownLinks={['Website Development Scope of Work', 'Digital Marketing Scope of Work', 'Consultant Statement of Work Template', 'Software Development Scope of Work']} />
+        <FooterDropdown textLink={'Quote Templates'} dropdownLinks={['Freelance Quotation Template', 'Web Design Quotation Template', 'Graphic Design Quotation Template', 'Graphic Design Quotation Template', 'Interior Design Quotation Template', 'Video Production Quotation Template', 'Social Media Marketing Quotation']} />
         <li><a href='#'>Credit Note Templates</a></li>
         <li><a href='#'>Estimate Templates</a></li>
         <li><a href='#'>Form Templates</a></li>
@@ -56,7 +56,7 @@ const Footer = () => {
         <li><a href='#'>Affiliates</a></li>
         <li><a href='#'>Write for Us</a></li>
         <li className='space-list' />
-        <li><a href='#'>Comparisons <FaAngleDown style={{ marginTop: '.2rem' }} /></a></li>
+        <FooterDropdown textLink={'Comparisons'} dropdownLinks={['Freshbooks Alternatives', 'Quickbooks Alternatives', 'Wave vs Quickbooks', 'Xero vs Quickbooks', 'Freshbooks vs Quickbooks']} />
 
       </ul>
     </footer>
