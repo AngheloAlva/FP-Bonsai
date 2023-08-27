@@ -5,9 +5,14 @@ import { FaCheck } from 'react-icons/fa6'
 import StartFreeButon from './StartFreeButon'
 
 // TODO: Add property for MOST POPULAR plan
-const PlanCard = ({ planTitle = '', planDesc = '', planPrice = [], planAdvantages = [], planType }) => {
+const PlanCard = ({ planTitle = '', planDesc = '', planPrice = [], planAdvantages = [], planType, popularPlan = false }) => {
   return (
     <div className='plan-card-container'>
+      {
+        popularPlan
+          ? <p className='text-popular-plan'>MOST POPULAR</p>
+          : <></>
+      }
       <h3 className='plan-card-title'>{planTitle}</h3>
       <p>{planDesc}</p>
       <div className='price-container'>
@@ -28,12 +33,14 @@ const PlanCard = ({ planTitle = '', planDesc = '', planPrice = [], planAdvantage
       }
       <hr />
       <ul className='advantages-container'>
-        {planAdvantages.map((advantage, index) => (
+        {
+          planAdvantages.map((advantage, index) => (
           <li key={index}>
             <FaCheck color='var(--primary-color)' />
             <p>{advantage}</p>
           </li>
-        ))}
+          ))
+        }
       </ul>
       <StartFreeButon padding={'1.375rem'} fontWeight={'700'} letterSpacing={'.044rem'} />
     </div>

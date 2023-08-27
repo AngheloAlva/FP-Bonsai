@@ -52,6 +52,7 @@ function App () {
           planDesc='Everything a growing independent business needs to thrive.'
           planPrice={[39, 32]}
           planType={planSelected ? 'yearly' : 'monthly'}
+          popularPlan
           planAdvantages={[
             'Everything in Starter plus...',
             'Custom Branding',

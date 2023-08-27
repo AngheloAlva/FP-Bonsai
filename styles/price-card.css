@@ -9,7 +9,9 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--text-color);
-  box-shadow:#f4f4f7 0px 0px 60px 0px
+  box-shadow:#f4f4f7 0px 0px 60px 0px;
+  position: relative;
+  overflow: hidden;
 }
 
 .plan-card-title {
@@ -73,4 +75,17 @@ hr {
   margin: 0;
   text-align: right;
   font-size: 1rem;
+}
+
+.text-popular-plan {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+  padding: .688rem 5rem;
+  position: absolute;
+  top: 3.125rem;
+  right: -5rem;
+  transform: rotate(45deg);
 }
