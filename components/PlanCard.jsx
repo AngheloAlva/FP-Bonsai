@@ -4,18 +4,28 @@ import '../styles/price-card.css'
 import { FaCheck } from 'react-icons/fa6'
 import StartFreeButon from './StartFreeButon'
 
-// TODO: Add state for monthly/annual price
 // TODO: Add property for MOST POPULAR plan
-const PlanCard = ({ planTitle = '', planDesc = '', planPrice = 0, planAdvantages = [] }) => {
+const PlanCard = ({ planTitle = '', planDesc = '', planPrice = [], planAdvantages = [], planType }) => {
   return (
     <div className='plan-card-container'>
       <h3 className='plan-card-title'>{planTitle}</h3>
       <p>{planDesc}</p>
       <div className='price-container'>
         <p className='price-symbol'>$</p>
-        <p className='price-amount'>{planPrice}</p>
+        <p className='price-amount'>
+          {
+            planType === 'monthly'
+              ? planPrice[0]
+              : planPrice[1]
+          }
+        </p>
         <p className='price-plan'>/MONTH</p>
       </div>
+      {
+        planType === 'yearly'
+          ? <p className='text-yearly-selected'>Billed yearly</p>
+          : <></>
+      }
       <hr />
       <ul className='advantages-container'>
         {planAdvantages.map((advantage, index) => (

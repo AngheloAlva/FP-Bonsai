@@ -37,13 +37,13 @@
 
 .price-plan {
   font-size: 1.5rem;
-  margin: 2.875rem 0 0;
-  margin-left: 1.25rem;
+  margin: 2.875rem 0 .5rem 1.25rem;
 }
 
 hr {
   width: 100%;
   border: 1px solid var(--primary-color);
+  margin: 0;
 }
 
 .advantages-container {
@@ -66,5 +66,11 @@ hr {
 .advantages-container p {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+}
+
+.text-yearly-selected {
+  margin: 0;
+  text-align: right;
   font-size: 1rem;
 }

@@ -34,7 +34,8 @@ function App () {
         <PlanCard
           planTitle='Starter'
           planDesc='Ideal for freelancers and contractors just starting out.'
-          planPrice={24}
+          planPrice={[24, 17]}
+          planType={planSelected ? 'yearly' : 'monthly'}
           planAdvantages={[
             'All Templates',
             'Unlimited Clients & Projects',
@@ -49,7 +50,8 @@ function App () {
         <PlanCard
           planTitle='Professional'
           planDesc='Everything a growing independent business needs to thrive.'
-          planPrice={39}
+          planPrice={[39, 32]}
+          planType={planSelected ? 'yearly' : 'monthly'}
           planAdvantages={[
             'Everything in Starter plus...',
             'Custom Branding',
@@ -64,7 +66,8 @@ function App () {
         <PlanCard
           planTitle='Business'
           planDesc='The perfect package for small businesses and agencies.'
-          planPrice={79}
+          planPrice={[79, 52]}
+          planType={planSelected ? 'yearly' : 'monthly'}
           planAdvantages={[
             'Everything in Starter and Professional plus...',
             'Subcontractor Management',
