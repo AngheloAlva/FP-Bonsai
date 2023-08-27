@@ -38,11 +38,9 @@ body {
   font-size: .938rem;
   color: var(--bg-color);
   border: none;
-  border-radius: 0.25rem;
-  font-weight: 700;
+  border-radius: .25rem;
   line-height: 1.25rem;
   text-align: center;
-  letter-spacing: .044rem;
   cursor: pointer;
 }
 

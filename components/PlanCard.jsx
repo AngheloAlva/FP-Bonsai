@@ -25,7 +25,7 @@ const PlanCard = ({ planTitle = '', planDesc = '', planPrice = 0, planAdvantages
           </li>
         ))}
       </ul>
-      <StartFreeButon padding={'1.375rem'} />
+      <StartFreeButon padding={'1.375rem'} fontWeight={'700'} letterSpacing={'.044rem'} />
     </div>
   )
 }
