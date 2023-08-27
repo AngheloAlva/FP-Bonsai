@@ -2,6 +2,7 @@
 import AddOnBox from '../components/AddOnBox'
 import NavBar from '../components/NavBar'
 import PlanCard from '../components/PlanCard'
+import StartFreeButon from '../components/StartFreeButon'
 import './App.css'
 
 function App () {
@@ -63,6 +64,10 @@ function App () {
       <AddOnBox addonAmount={'$9'} AmountText addonTitle={'Partners'} addonDesc={'Invite other users for full account access and company management.'} />
       <AddOnBox addonAmount={'$10'} AmountText addonTitle={'Bonsai Tax'} addonDesc={'Track expenses, identify write-offs, and estimate quarterly taxes easily.'} LearnMore />
     </section>
+    <div className='card-container'>
+      <div><p>It's <p style={{ color: 'var(--primary-color)' }}>your</p> business. We're here to help it grow.</p></div>
+      <StartFreeButon padding={'.938rem 1.563rem'} fontWeight={'400'} letterSpacing={'0'} minWidth={'8.563rem'} fontSize={'.875rem'} />
+    </div>
     </>
   )
 }

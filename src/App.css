@@ -47,3 +47,28 @@ body {
 .plan-card-btn:hover {
   background-color: #00a780;
 }
+
+.card-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2faff;
+  border-radius: .5rem;
+  padding: 3rem 2rem;
+  margin: 6.25rem 1.25rem 7.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.card-container p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.card-container div {
+  font-family: 'Luxurious Roman', cursive;
+  line-height: 3.25rem;
+  margin-right: 2rem;
+  max-width: 36.375rem;
+}
