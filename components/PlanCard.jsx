@@ -2,6 +2,7 @@
 import React from 'react'
 import '../styles/price-card.css'
 import { FaCheck } from 'react-icons/fa6'
+import StartFreeButon from './StartFreeButon'
 
 // TODO: Add state for monthly/annual price
 // TODO: Add property for MOST POPULAR plan
@@ -24,7 +25,7 @@ const PlanCard = ({ planTitle = '', planDesc = '', planPrice = 0, planAdvantages
           </li>
         ))}
       </ul>
-      <button className='plan-card-btn'>START FREE</button>
+      <StartFreeButon padding={'1.375rem'} />
     </div>
   )
 }
