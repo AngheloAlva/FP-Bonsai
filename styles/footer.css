@@ -1,0 +1,41 @@
+footer {
+  margin-top: 6.875rem;
+  color: var(--text-color);
+  padding: 0 1.978rem 9.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-list h3, .footer-list h4 {
+  margin: 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2.875rem;
+}
+
+.footer-list h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.563rem;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.space-list {
+  height: 1.625rem;
+}
+
+.footer-list h4 {
+  font-weight: 600;
+  margin-bottom: .625rem;
+}
