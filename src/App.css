@@ -54,7 +54,7 @@ body {
   background-color: #f2faff;
   border-radius: .5rem;
   padding: 3rem 2rem;
-  margin: 6.25rem 1.25rem 7.5rem;
+  margin: 6.25rem 1.25rem 6.25rem;
   font-size: 2.5rem;
   text-align: center;
   justify-content: space-between;
@@ -71,4 +71,46 @@ body {
   line-height: 3.25rem;
   margin-right: 2rem;
   max-width: 36.375rem;
+}
+
+.faq-container-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 2.25rem;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.25rem;
+  padding: 0 1.25rem;
+  color: var(--text-color);
+  font-size: .875rem;
+}
+
+.faq-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-container h3 {
+  margin: 0;
+  font-size: 1.563rem;
+  transition: color .2s ease-in-out;
+  line-height: 1.875rem;
+}
+
+.faq-title:hover {
+  color: var(--primary-color);
+}
+
+.faq-container p {
+  margin: .625rem 0 .625rem;
+  line-height: 1.5rem;
+  text-align: left;
 }
