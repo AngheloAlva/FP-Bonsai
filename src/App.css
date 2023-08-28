@@ -92,11 +92,15 @@ body {
   margin: 5.75rem 0 2.5rem;
 }
 
-.add-ons-container {
+.add-ons-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 1.25rem;
+}
+
+.add-ons-container {
+  display: flex;
 }
 
 .plan-card-btn {

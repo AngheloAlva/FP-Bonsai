@@ -84,11 +84,30 @@ function App () {
         />
       </section>
 
-      <section className='add-ons-container'>
+      <section className='add-ons-section'>
         <h2 className='add-ons-title'>Super charge your work with add-ons</h2>
-        <AddOnBox addonAmount={'Free'} addonTitle={'Collaborators'} addonDesc={'Invite other users to specific projects for limited access and funtionality.'} />
-        <AddOnBox addonAmount={'$9'} AmountText addonTitle={'Partners'} addonDesc={'Invite other users for full account access and company management.'} />
-        <AddOnBox addonAmount={'$10'} AmountText addonTitle={'Bonsai Tax'} addonDesc={'Track expenses, identify write-offs, and estimate quarterly taxes easily.'} LearnMore />
+        <div className='add-ons-container' style={{ flexDirection: planSelected ? 'column-reverse' : 'column' }}>
+          <AddOnBox
+            addonAmount={['Free', 'Free']}
+            addonTitle={'Collaborators'}
+            addonDesc={'Invite other users to specific projects for limited access and funtionality.'}
+          />
+          <AddOnBox
+            addonAmount={['$9', '$90']}
+            AmountText
+            addonTitle={'Partners'}
+            addonDesc={'Invite other users for full account access and company management.'}
+            planType={planSelected ? 'yearly' : 'monthly'}
+          />
+          <AddOnBox
+            addonAmount={['$10', '$100']}
+            AmountText
+            addonTitle={planSelected ? 'Accounting & Tax Assistant' : 'Bonsai Tax'}
+            addonDesc={planSelected ? 'Manage your freelance finances and always be ready for tax season with easy-to-use accounting and tax tools.' : 'Track expenses, identify write-offs, and estimate quarterly taxes easily.'}
+            LearnMore
+            planType={planSelected ? 'yearly' : 'monthly'}
+          />
+        </div>
       </section>
 
       <div className='card-container'>
@@ -106,7 +125,6 @@ function App () {
 
       <Footer />
     </>
-
   )
 }
 

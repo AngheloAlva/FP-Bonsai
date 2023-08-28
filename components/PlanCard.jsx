@@ -4,7 +4,6 @@ import '../styles/price-card.css'
 import { FaCheck } from 'react-icons/fa6'
 import StartFreeButon from './StartFreeButon'
 
-// TODO: Add property for MOST POPULAR plan
 const PlanCard = ({ planTitle = '', planDesc = '', planPrice = [], planAdvantages = [], planType, popularPlan = false }) => {
   return (
     <div className='plan-card-container'>
