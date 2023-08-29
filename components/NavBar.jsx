@@ -26,28 +26,25 @@ const NavBar = () => {
 
         <FaBars className='navbar__menu-icon' onClick={() => setNavMenu(true)} />
 
-        {
-          navMenu && (
-            <div className={`navbar-menu ${navMenu ? 'navbar-menu-active' : ''}`}>
-              <div className='menu-logo'>
-                <img src='../public/bonsai-logo.svg' alt='Bonsai Logo' />
-                <FaXmark className='navbar__menu-icon' onClick={() => setNavMenu(false)} />
-              </div>
+        <div className={`navbar-menu ${navMenu ? 'navbar-menu-active' : ''}`}>
+          <div className='menu-logo'>
+            <img src='../public/bonsai-logo.svg' alt='Bonsai Logo' />
+            <FaXmark className='navbar__menu-icon' onClick={() => setNavMenu(false)} />
+          </div>
 
-              <div className='menu-options'>
-                <div>Product <FaAngleDown /></div>
-                <div>Templates <FaAngleDown /></div>
-                <a href='#'>Pricing</a>
-                <a href='#'>Reviews</a>
-              </div>
+          <div className='menu-options'>
+            <div>Product <FaAngleDown /></div>
+            <div>Templates <FaAngleDown /></div>
+            <a href='#'>Pricing</a>
+            <a href='#'>Reviews</a>
+          </div>
 
-              <div className='menu-btn-container'>
-                <button className='btn-login'>LOG IN</button>
-                <StartFreeButon />
-              </div>
-            </div>
-          )
-        }
+          <div className='menu-btn-container'>
+            <button className='btn-login'>LOG IN</button>
+            <StartFreeButon />
+          </div>
+        </div>
+
         {/* <ul>
           <div>
             <li><a href='#'>Product</a></li>
