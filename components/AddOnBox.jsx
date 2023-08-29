@@ -25,14 +25,17 @@ const AddOnBox = ({ addonAmount = [], AmountText = false, addonTitle, addonDesc,
           </p>
         }
       </div>
-      <h5>{addonTitle}</h5>
-      <p>{addonDesc}</p>
+      <div>
+        <h5>{addonTitle}</h5>
+        <p>{addonDesc}</p>
+
       {
         LearnMore &&
         <a className='learn-more-btn'>
           LEARN MORE <FaAngleRight size={'.875rem'} style={{ marginTop: '-.04rem' }} />
         </a>
       }
+      </div>
     </div>
   )
 }

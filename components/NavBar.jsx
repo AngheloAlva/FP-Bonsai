@@ -45,18 +45,19 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* <ul>
-          <div>
-            <li><a href='#'>Product</a></li>
-            <li><a href='#'>Templates</a></li>
+        <div className='nav-menu-ul-options'>
+          <ul>
+            <li><a href='#'>Product <FaAngleDown size={'.8rem'} /></a></li>
+            <li><a href='#'>Templates <FaAngleDown size={'.8rem'} /></a></li>
             <li><a href='#'>Pricing</a></li>
             <li><a href='#'>Reviews</a></li>
-          </div>
-          <div>
-            <li><button>LOG IN</button></li>
-            <li><button>START FREE</button></li>
-          </div>
-        </ul> */}
+          </ul>
+        </div>
+
+        <div className='nav-menu-ul-btn'>
+          <button className='btn-login'>LOG IN</button>
+          <StartFreeButon />
+        </div>
       </nav>
     </>
   )

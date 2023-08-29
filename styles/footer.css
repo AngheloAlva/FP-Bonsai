@@ -64,3 +64,16 @@ footer {
 .footer-dropdown-active {
   max-height: 15rem;
 }
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 6.25rem 10.14rem 6rem;
+  }
+}

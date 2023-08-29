@@ -89,3 +89,10 @@ hr {
   right: -5rem;
   transform: rotate(45deg);
 }
+
+@media (min-width: 992px) {
+  .plan-card-container {
+    padding: 4.188rem 2.8rem;
+    justify-content: space-between;
+  }
+}

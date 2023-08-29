@@ -54,3 +54,28 @@
 .learn-more-btn:hover {
   gap: .6rem;
 }
+
+@media (min-width: 768px) {
+  .add-on-box-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .add-on-box-container h5 {
+    font-size: 1.375rem;
+    line-height: 1.925rem;
+  }
+
+  .amount-container {
+    font-size: 2rem;
+  }
+
+  .amount-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .amount-number {
+    font-size: 2.75rem;
+  }
+}

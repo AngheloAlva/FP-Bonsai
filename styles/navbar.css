@@ -110,3 +110,57 @@ nav img {
   background-color: var(--primary-color);
   color: #ffffff;
 }
+
+.nav-menu-ul {
+  display: none;
+  list-style: none;
+}
+
+.nav-menu-ul-options ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-menu-ul-options a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  transition: all .1s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.nav-menu-ul-btn {
+  display: flex;
+  gap: 1.063rem;
+}
+
+.nav-menu-ul-btn button {
+  padding: .563rem 1.375rem;
+}
+
+
+@media (min-width: 992px) {
+  nav {
+    background-color: var(--bg-color);
+    left: 0;
+    right: 0;
+    padding: 0 2.625rem;
+    justify-content: space-between;
+  }
+
+  .navbar__menu-icon {
+    display: none;
+  }
+
+  .nav-menu-ul {
+    display: flex;
+  }
+
+  nav img {
+    height: 1.313rem;
+  }
+}
