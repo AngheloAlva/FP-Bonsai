@@ -111,9 +111,8 @@ nav img {
   color: #ffffff;
 }
 
-.nav-menu-ul {
+.nav-menu-ul-options {
   display: none;
-  list-style: none;
 }
 
 .nav-menu-ul-options ul {
@@ -134,7 +133,7 @@ nav img {
 }
 
 .nav-menu-ul-btn {
-  display: flex;
+  display: none;
   gap: 1.063rem;
 }
 
@@ -156,11 +155,11 @@ nav img {
     display: none;
   }
 
-  .nav-menu-ul {
-    display: flex;
-  }
-
   nav img {
     height: 1.313rem;
+  }
+
+  .nav-menu-ul-options, .nav-menu-ul-btn {
+    display: flex;
   }
 }
